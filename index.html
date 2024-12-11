@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger things</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+
+.st-bound {
+  box-shadow: -0.05rem -0.05rem 2px #ed2b12,
+    0.05rem -0.05rem 2px #ed2b12,
+    -0.05rem 0.05rem 2px #ed2b12,
+    0.05rem 0.05rem 2px #ed2b12;
+  height: 5px;
+}
+.st-bound-full {
+  width: 100%;
+  margin: auto;
+  margin-bottom: -3.1rem;
+  max-width: 612px;
+  margin-left: 5px;
+  animation: opacity 5.5s ease-in-out;
+}
+.st-bound-mini {
+  margin-top: 0.5rem;
+}
+
+.st-bound-left {
+  float: left;
+  width: 99px;
+  position: relative;
+  left: -12px;
+  top: -44px;
+}
+
+.st-bound-right {
+  float: right;
+  width: 103px;
+  left: 0.3rem;
+  position: relative;
+  top: -44px;
+}
+#Str1{
+  animation: Move 3s ease-in-out;
+}
+#Str2{
+  animation: topmove 3s ease-in-out;
+}
+#Str5{
+  animation: toppmove 3s ease-in-out;
+}
+#Str6{
+  animation: rightMove 3s ease-in-out;
+}
+#T{
+  animation: bottomUp 3s ease-in-out;
+}
+#s{
+  animation: botttomUp 3.4s ease-in-out;
+}
+@keyframes opacity {
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+@keyframes Move {
+  from{
+    left: -455px;
+  }to{
+    left: 0px;
+  }
+}
+@keyframes topmove {
+  from{
+    top: -85px }
+    to{
+top: -26px
+    }
+  }
+@keyframes toppmove {
+  from{
+    top: -106px }
+    to{
+top: -26px
+    }
+}
+@keyframes rightMove {
+  from{
+    right: -455px;
+  }to{
+    right: 0px;
+  }
+}
+@keyframes bottomUp {
+  from{
+    top:-76px;
+  }to{
+    top:-110px;
+  }
+}
+@keyframes botttomUp {
+  from{
+    top:-60px;
+  }to{
+    top:-110px;
+  }
+}
+</style>
+  <body
+    class="flex items-center justify-center bg-black text-white font-logoText" id="body">
+    <audio
+      src="stranger-things-title-sequence-hd-netflix-1080-publer.io (1).mp3"
+      id="myAudio" autoplay loop  preload="auto"></audio>
+      <div class="bg-black"></div>
+    <div class="text-center absolute top-[30%]">
+      <div class="st-bound st-bound-full"></div>
+      <span
+        class="uppercase text-[8.5rem] font-extrabold w-[625px] mt-[6rem] mx-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[4px] fade-in relative"
+        id="Str1">S</span>
+      <span
+        class="uppercase text-[6rem] font-extrabold w-[625px] mt-[6rem] mx-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[2px] fade-in relative" style="top: -26px;"
+        id="Str2">t</span>
+      <span
+        class="uppercase text-[6rem] font-extrabold w-[625px] mt-[6rem] mx-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[2px] fade-in relative" id="Str3" style="top: -26px;">rang</span>
+      <span
+        class="uppercase text-[6rem] font-extrabold w-[625px] mt-[6rem] mx-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[2px] fade-in relative" id="Str5" style="top: -26px;">e</span><span
+        class="uppercase text-[8.5rem] font-extrabold w-[625px] mt-[6rem] mx-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[4px] fade-in relative" id="Str6">r<br></span>
+        <div class="st-bound st-bound-mini st-bound-left"></div>
+    <div class="st-bound st-bound-mini st-bound-right"></div>
+        <span
+        class="uppercase text-[7rem] font-extrabold w-[625px]  -ml-[25px] mr-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[2px] fade-in relative"
+        style="top: -110px;" id="Things">T</span>
+        <span
+        class="uppercase text-[7rem] font-extrabold w-[625px]  -ml-[3px] mr-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[2px] fade-in relative"
+        style="top: -110px;" id="T">h</span>
+        <span
+        class="uppercase text-[7rem] font-extrabold w-[625px]  -ml-[11px] mr-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[2px] fade-in relative"
+        style="top: -110px;" id="Things">ing</span>
+        <span
+        class="uppercase text-[7rem] font-extrabold w-[625px]  -ml-[1px] mr-[auto] mb-[3rem] text-logoColor text-shadow-custom -tracking-[2px] fade-in relative"
+        style="top: -110px;" id="s">s</span>
+      <p>
+        A Netflix Original Series
+      </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
